@@ -7,11 +7,17 @@
 myPath()
 }
 \description{
-This path can be used to make R scripts portable, and
+This function returns the path of a script, being run by Rscript.
+Note that the function does not work in interactive mode.
+The function can be used to make R scripts portable, and
 less rigidly dependent on a single filestructure.
 Might be UNIX specific?
 }
 \examples{
-myPath() 
+#!/usr/bin/env Rscript 
+print(myPath()) 
+
+returns: /the/path/to/the/script.R
+
 }
 \keyword{path}
